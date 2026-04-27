@@ -360,6 +360,123 @@ section:not(.hero) {
 .experiences-page .card {
     height: 520px;
 }
+/* --------------------------- DINE PAGE --------------------------- */
+/* --------------------------- DINE PAGE --------------------------- */
+
+.dine-page .title-tag {
+    text-align: center;
+    padding: 50px 50px 40px;
+}
+
+.dine-page .title-tag h2 {
+    margin: 0 0 12px;
+}
+
+.dine-page .page-title {
+    color: #003b51;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.dine-page .title-tag h3 {
+    margin-bottom: 85px;
+}
+
+.dine-page .restaurant-row {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 34px;
+    align-items: start;
+    margin-bottom: 100px;
+}
+
+.dine-page .restaurant-image {
+    position: relative;
+    width: 100%;
+    max-width: 714px;
+    height: 517px;
+    border-radius: 8px;
+    overflow: visible;
+}
+
+.dine-page .restaurant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.dine-page .image-label {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    padding: 10px 60px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.dine-page .image-label h2 {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fefcf6;
+    margin: 0;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.dine-page .image-label-gold {
+    background-color: #a58d66;
+}
+
+.dine-page .image-label-dark {
+    background-color: #162a2c;
+}
+
+.dine-page .restaurant-content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    max-width: 700px;
+    margin-top: -20px;
+    text-align: left;
+}
+
+.dine-page .restaurant-content h2 {
+    margin: 15px 0 0;
+}
+
+.dine-page .restaurant-content h3 {
+    margin: 0;
+    color: #686867;
+    font-weight: 300;
+}
+
+.dine-page .restaurant-content p {
+    margin: 0 0 15px;
+}
+
+.dine-page .restaurant-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.dine-page .restaurant-actions .btn-gold-outline {
+    flex: 1;
+    text-align: center;
+}
+
+.dine-page .phone {
+    align-self: flex-end;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid #0f1720;
+    border-radius: 6px;
+    background-color: #f2f2f2;
+    color: #0f1720;
+    font-size: 14px;
+}
 
 /* --------------------------- OFFERS PAGE --------------------------- */
 
