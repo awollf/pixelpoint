@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Offers</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body class="offers-page">
+        <header class="header">
+            <nav class="navbar">
+                <h1 class="header__title">
+                    <a href="home.html" class="header__brand">
+                        <img
+                            src="logos/WPH Logo 3.png"
+                            alt="West Point Hotel"
+                            class="header__logo"
+                        />
+                    </a>
+                </h1>
+
+                <ul class="nav-links">
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="#">Stay</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="#">Experiences</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="#">Dine</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="#">Events</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="offers.html">Offers</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="#">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero hero--offers">
+                <img
+                    class="hero__image"
+                    src="images/offersImage.png"
+                    alt="Exclusive offers"
+                />
+
+                <div class="hero__content">
+                    <h1 class="hero__title">Exclusive Offers</h1>
+                    <p class="hero__description">
+                        Discover our exclusive offers and packages designed to
+                        make your stay unforgettable.
+                    </p>
+                </div>
+            </section>
+
+            <section class="offers">
+                <div class="offers__grid">
+                    <article class="card offer-card" data-category="couple">
+                        <img
+                            class="card__image"
+                            src="images/honeymoon.png"
+                            alt="Honeymoon Package"
+                        />
+                        <h3 class="card__title">Honeymoon Package</h3>
+                        <p class="card__description">
+                            Luxury bungalow suite with romantic amenities
+                        </p>
+                        <button
+                            class="button button--primary"
+                            onclick="bookNow()"
+                        >
+                            Book Now
+                        </button>
+                    </article>
+
+                    <article class="card offer-card" data-category="family">
+                        <img
+                            class="card__image"
+                            src="images/family.png"
+                            alt="Family Perks"
+                        />
+                        <h3 class="card__title">Family Perks</h3>
+                        <p class="card__description">
+                            Enjoy exclusive family discounts and activities!
+                        </p>
+                        <button
+                            class="button button--primary"
+                            onclick="bookNow()"
+                        >
+                            Book Now
+                        </button>
+                    </article>
+
+                    <article
+                        class="card offer-card"
+                        data-category="celebration"
+                    >
+                        <img
+                            class="card__image"
+                            src="images/celebration.png"
+                            alt="Celebration Package"
+                        />
+                        <h3 class="card__title">Celebration Package</h3>
+                        <p class="card__description">
+                            Make your special occasion even more memorable!
+                        </p>
+                        <button
+                            class="button button--primary"
+                            onclick="bookNow()"
+                        >
+                            Book Now
+                        </button>
+                    </article>
+
+                    <article class="card offer-card" data-category="traveler">
+                        <img
+                            class="card__image"
+                            src="images/traveler.png"
+                            alt="Traveler Package"
+                        />
+                        <h3 class="card__title">Traveler Package</h3>
+                        <p class="card__description">
+                            Perfect for the budget-conscious traveler!
+                        </p>
+                        <button
+                            class="button button--primary"
+                            onclick="bookNow()"
+                        >
+                            Book Now
+                        </button>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h2>Newsletter</h2>
+                    <p>
+                        Subscribe to our newsletter for exclusive offers and
+                        updates!
+                    </p>
+                    <form class="newsletter-form">
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-right">
+                    <h2>West Point Hotel</h2>
+                    <p>Location: 123 Main Street, Caribbean</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@westpointhotel.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-center">
+                    <p>&copy; 2026 West Point Hotel. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
