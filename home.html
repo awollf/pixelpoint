@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body class="home-page">
+        <header class="header">
+            <nav class="navbar">
+                <h1 class="header__title">
+                    <a href="home.html" class="header__brand">
+                        <img
+                            src="logos/WPH Logo 3.png"
+                            alt="West Point Hotel"
+                            class="header__logo"
+                        />
+                    </a>
+                </h1>
+
+                <ul class="nav-links">
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="stay.html">Stay</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="experiences.html"
+                            >Experiences</a
+                        >
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="dine.html">Dine</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="offers.html">Offers</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- HERO -->
+            <section class="hero hero--home">
+                <img
+                    class="hero__image"
+                    src="images/homeImage.png"
+                    alt="West Point Hotel"
+                />
+
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Stay<br />
+                        Starts<br />
+                        Here<br />
+                    </h1>
+                    <p class="hero__description">
+                        Experience luxury and comfort in the heart of the
+                        Caribbean
+                    </p>
+                    <button
+                        class="button button--primary"
+                        onclick="bookNow()"
+                        style="display: inline-block; margin-top: 30px"
+                    >
+                        Book Now
+                    </button>
+                </div>
+            </section>
+
+            <!-- VIDEO -->
+            <section class="home__video">
+                <video class="hero__video" autoplay muted loop playsinline>
+                    <source src="videos/homevideo.mp4" type="video/mp4" />
+                </video>
+            </section>
+
+            <!-- ABOUT US -->
+            <section class="aboutus">
+                <h2 class="section__title" style="font-size: 70px">About Us</h2>
+                <div class="aboutus-card">
+                    <p class="aboutus-text">
+                        At West Point Hotel, we focus on delivering a relaxing
+                        and seamless stay. <br />Our thoughtfully designed
+                        spaces, modern amenities, and dedicated service ensure
+                        every guest feels comfortable from check-in to
+                        check-out.
+                    </p>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE -->
+            <section class="experience">
+                <h2 class="section__title">Discover Our Experiences</h2>
+                <div class="experience__grid">
+                    <div class="card">
+                        <img
+                            class="card__image"
+                            src="images/suiteImage.png"
+                            alt="Stay"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Stay</h3>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img
+                            class="card__image"
+                            src="images/hightide.png"
+                            alt="Dine"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Dine</h3>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img
+                            class="card__image"
+                            src="images/celebration.png"
+                            alt="Events"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Events</h3>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img
+                            class="card__image"
+                            src="images/snorkeling.png"
+                            alt="Experiences"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Experiences</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STAY -->
+            <section class="stay">
+                <h2 class="section__title">Your Perfect Stay Starts Here</h2>
+
+                <div class="rooms__grid">
+                    <div class="card">
+                        <img
+                            class="card__image"
+                            src="images/suiteImage.png"
+                            alt="Suite"
+                        />
+                        <h3 class="card__title">Suites</h3>
+                        <p class="card__price">$599 / night</p>
+                        <button
+                            class="button button--primary"
+                            onclick="bookNow()"
+                        >
+                            Book Now
+                        </button>
+                    </div>
+
+                    <div class="card">
+                        <img
+                            class="card__image"
+                            src="images/bungalowImage.png"
+                            alt="Bungalow"
+                        />
+                        <h3 class="card__title">Bungalows</h3>
+                        <p class="card__price">$999 / night</p>
+                        <button
+                            class="button button--primary"
+                            onclick="bookNow()"
+                        >
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICE -->
+            <section class="services">
+                <h2 class="section__title">Services Designed Around You</h2>
+
+                <div class="services__grid">
+                    <div class="card">
+                        <h3 class="card__title">Helicopter</h3>
+                        <img
+                            class="card__image"
+                            src="images/helicopter.png"
+                            alt="Jet"
+                        />
+                    </div>
+
+                    <div class="card">
+                        <h3 class="card__title">Taxi & Car Rental</h3>
+                        <img
+                            class="card__image"
+                            src="images/car.png"
+                            alt="Yacht"
+                        />
+                    </div>
+
+                    <div class="card">
+                        <h3 class="card__title">Private Jet</h3>
+                        <img
+                            class="card__image"
+                            src="images/privatejet.png"
+                            alt="Helicopter"
+                        />
+                    </div>
+
+                    <div class="card">
+                        <h3 class="card__title">Cruise</h3>
+                        <img
+                            class="card__image"
+                            src="images/cruiseship.png"
+                            alt="Transfer"
+                        />
+                    </div>
+
+                    <div class="card">
+                        <h3 class="card__title">VIP Transfer Service</h3>
+                        <img
+                            class="card__image"
+                            src="images/transferservice.png"
+                            alt="Transfer"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- TESTIMONIAL -->
+            <section class="testimonials">
+                <div class="testimonials__grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">
+                            “<b style="font-size: 100px">W</b>est Point Hotel<br />
+                            offers elegant event spaces and a seamless,<br />
+                            professional experience. Every detail is<br />
+                            thoughtfully executed, creating the perfect
+                            setting<br />
+                            for any occasion.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h2>Newsletter</h2>
+                    <p>
+                        Subscribe to our newsletter for exclusive offers and
+                        updates!
+                    </p>
+                    <form class="newsletter-form">
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-right">
+                    <h2>West Point Hotel</h2>
+                    <p>Location: 123 Main Street, Caribbean</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@westpointhotel.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-center">
+                    <p>&copy; 2026 West Point Hotel. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
