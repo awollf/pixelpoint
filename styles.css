@@ -150,6 +150,7 @@ img {
     background: transparent;
     cursor: pointer;
     transition: 0.3s ease;
+    font-size: 0.75rem;
 }
 
 .btn:hover {
@@ -209,6 +210,12 @@ img {
 .hero__description {
     font-size: 1.1rem;
     line-height: 1.8;
+}
+
+.hero-bar {
+    width: 100%;
+    height: 100px;
+    background-color: #454545;
 }
 
 /* EXPERIENCE */
@@ -289,6 +296,71 @@ img {
     font-size: 2rem;
     letter-spacing: 2px;
     margin-bottom: 4rem;
+}
+
+/* CARD */
+.card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card__title {
+    position: absolute;
+    left: 20px;
+    color: #fefcf6;
+    opacity: 1;
+    transform: translateY(20px);
+    transition: 0.4s ease;
+    z-index: 2;
+    bottom: 70px;
+}
+
+.stay .card__title {
+    margin: 0;
+    color: #fefcf6;
+    white-space: nowrap;
+}
+
+.card__image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.1)
+    );
+    opacity: 1;
+    transition: 0.4s ease;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    transition: 0.4s ease;
+    z-index: 1;
+}
+
+.card__image {
+    /* .card__image. card--homepage */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.card__content {
+    position: absolute;
+    z-index: 2;
+    color: #fefcf6;
 }
 
 /* FOOTER */
@@ -453,9 +525,6 @@ footer::before {
 /* ------------------------------ HOME PAGE ------------------------------ */
 
 /* HERO */
-.home-page .hero {
-    position: relative;
-}
 
 .home-page .hero__content {
     position: absolute;
@@ -468,12 +537,6 @@ footer::before {
     gap: 20px;
     flex-direction: column;
     display: flex;
-}
-
-.hero-bar {
-    width: 100%;
-    height: 100px;
-    background-color: #454545;
 }
 
 /* CTA */
@@ -546,20 +609,7 @@ footer::before {
 
 /* CARD */
 .home-page .card {
-    position: relative;
-    overflow: hidden;
     height: 320px;
-    cursor: pointer;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-.home-page .card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.25);
-    transition: 0.4s ease;
-    z-index: 1;
 }
 
 .home-page .card:hover::before {
@@ -568,10 +618,7 @@ footer::before {
 
 /* IMAGE */
 .home-page .card__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
+    /* .card__image. card--homepage */
     z-index: 0;
     position: relative;
 }
@@ -586,42 +633,13 @@ footer::before {
     background: #d9b477;
 }
 
-/* OVERLAY */
-.home-page .card__overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.75),
-        rgba(0, 0, 0, 0.1)
-    );
-    opacity: 1;
-    transition: 0.4s ease;
-}
-
 /* TEXT */
-.home-page .card__title {
-    position: absolute;
-    left: 20px;
-    color: #fefcf6;
-    opacity: 1;
-    transform: translateY(20px);
-    transition: 0.4s ease;
-    z-index: 2;
-}
-
-.home-page .card__title {
-    bottom: 70px;
-}
 
 .home-page .aboutus .section__title {
     font-family: "Big Caslon";
 }
 
 /* STAY SECTION */
-.stay .card {
-    position: relative;
-}
 
 .stay .card::before {
     content: "";
@@ -631,40 +649,13 @@ footer::before {
     z-index: 1;
 }
 
-.stay .card__title {
-    margin: 0;
-    color: #fefcf6;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.stay .card .btn {
-    position: static;
-    padding: 0.6rem 1.4rem;
-    font-size: 0.75rem;
-
-    border: 1px solid #fefcf6;
-    background: transparent;
-    color: #fefcf6;
-
-    line-height: 1;
-}
-
-.stay .card .btn:hover {
-    background: #c8a96a;
-    border: 1px solid #c8a96a;
-    color: #0f1720;
-}
-
 .stay .card__content {
-    position: absolute;
     right: 20px;
     bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 10px;
-    z-index: 2;
     width: calc(100% - 40px);
 }
 
@@ -719,17 +710,13 @@ footer::before {
 
 .image {
     position: relative;
-    width: 100%;
     margin-left: 0;
     overflow: hidden;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 .home-page .image-section {
     padding: 0;
-}
-
-.image {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
 }
 
 .image img {
@@ -750,15 +737,13 @@ footer::before {
 /* ----------------------------- OFFERS PAGE ----------------------------- */
 
 /* OFFERS */
-.offers-page .hero {
-    position: relative;
-}
 
 .offers-page .offers {
     padding: 6rem 5rem;
 }
 
 /* INTRO */
+
 .offers-intro {
     padding: 5rem 5rem 2rem;
     max-width: 1400px;
@@ -791,18 +776,13 @@ footer::before {
     gap: 2rem;
 }
 
+/* OFFERS CARD */
+
 .offer-card {
     position: relative;
     height: 420px;
     overflow: hidden;
     cursor: pointer;
-}
-
-.offer-card .card__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
 }
 
 .offer-card:hover .card__image {
@@ -817,11 +797,8 @@ footer::before {
 }
 
 .offer-card__content {
-    position: absolute;
     bottom: 30px;
     left: 25px;
-    color: #fff;
-    z-index: 2;
 }
 
 .offer-card__tag {
