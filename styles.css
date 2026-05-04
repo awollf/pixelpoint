@@ -119,6 +119,8 @@ img {
     transform: scale(1.03);
 }
 
+/* NAV */
+
 .nav-links {
     display: flex;
     gap: 3rem;
@@ -137,23 +139,23 @@ img {
     color: #c8a96a;
 }
 
-.button {
-    margin-right: 290px;
+/* BUTTON */
+
+.btn {
+    display: inline-flex;
     padding: 0.9rem 2rem;
     border: 1px solid #fefcf6;
-    background: transparent;
+    border-radius: 2px;
     color: #fefcf6;
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    background: transparent;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
-.button:hover {
+.btn:hover {
     background: #c8a96a;
+    border: 1px solid #c8a96a;
     color: #0f1720;
-    border: none;
 }
 
 /* HERO */
@@ -173,6 +175,19 @@ img {
     inset: 0;
 }
 
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 23, 32, 0.75) 0%,
+        rgba(15, 23, 32, 0.3) 40%,
+        rgba(15, 23, 32, 0) 100%
+    );
+}
+
 .hero__content {
     position: absolute;
     top: 50%;
@@ -180,6 +195,7 @@ img {
     transform: translateY(-50%);
     max-width: 36rem;
     color: #fefcf6;
+    z-index: 2;
 }
 
 .hero__title {
@@ -201,7 +217,6 @@ footer {
     padding: 6rem 5rem 2rem;
     border-top: 1px solid rgba(200, 169, 106, 0.25);
     position: relative;
-    margin-top: 4rem;
 }
 
 footer::before {
@@ -359,14 +374,18 @@ footer::before {
 /* HERO */
 .home-page .hero {
     position: relative;
+}
+
+.home-page .hero {
+    position: relative;
     width: 100%;
-    height: 100vh;
+    height: 710px;
     overflow: hidden;
 }
 
 .home-page .hero__image {
     width: 100%;
-    height: 100%;
+    height: 710px;
     object-fit: cover;
     display: block;
 }
@@ -378,6 +397,42 @@ footer::before {
     transform: translateY(-50%);
     color: #fefcf6;
     max-width: 500px;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+    display: flex;
+}
+
+.hero-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 125px;
+    background-color: #454545;
+    z-index: 5;
+}
+
+/* CTA */
+
+.hero__cta {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.hero__cta:hover {
+    opacity: 0.8;
+    transform: translateY(-2px); /* 살짝 떠오름 */
 }
 
 /* VIDEO */
@@ -445,7 +500,7 @@ footer::before {
 }
 
 .home-page .card:hover::before {
-    background: rgba(0, 0, 0, 0.55);
+    opacity: 0;
 }
 
 /* IMAGE */
@@ -454,6 +509,8 @@ footer::before {
     height: 100%;
     object-fit: cover;
     transition: transform 0.6s ease;
+    z-index: 0;
+    position: relative;
 }
 
 .home-page .card:hover .card__image {
@@ -475,22 +532,17 @@ footer::before {
         rgba(0, 0, 0, 0.75),
         rgba(0, 0, 0, 0.1)
     );
-    opacity: 0;
-    transition: 0.4s ease;
-}
-
-.home-page .card:hover .card__overlay {
     opacity: 1;
+    transition: 0.4s ease;
 }
 
 /* TEXT */
 .home-page .card__title,
-.home-page .card__price,
 .home-page .card__description {
     position: absolute;
     left: 20px;
-    color: white;
-    opacity: 0;
+    color: #fefcf6;
+    opacity: 1;
     transform: translateY(20px);
     transition: 0.4s ease;
     z-index: 2;
@@ -500,49 +552,139 @@ footer::before {
     bottom: 70px;
 }
 
-.home-page .card__price,
 .home-page .card__description {
     bottom: 25px;
-}
-
-.home-page .card:hover .card__title,
-.home-page .card:hover .card__price,
-.home-page .card:hover .card__description {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .home-page .aboutus .section__title {
     font-family: "Big Caslon";
 }
 
+/* STAY SECTION */
+.stay .card {
+    position: relative;
+}
+
+.stay .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.stay .card__title {
+    margin: 0;
+    color: #fefcf6;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.stay .card .btn {
+    position: static;
+    padding: 0.6rem 1.4rem;
+    font-size: 0.75rem;
+
+    border: 1px solid #fefcf6;
+    background: transparent;
+    color: #fefcf6;
+
+    line-height: 1;
+}
+
+.stay .card .btn:hover {
+    background: #c8a96a;
+    border: 1px solid #c8a96a;
+    color: #0f1720;
+}
+
+.stay .card__content {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    z-index: 2;
+    width: calc(100% - 40px);
+}
+
+/* VIP SECTION */
+
+.vip {
+    padding: 120px 80px;
+}
+
+.vip .card {
+    height: 500px;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.vip .card::before {
+    display: none;
+}
+
+.vip .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vip .card .btn {
+    position: absolute;
+    bottom: 50px;
+    right: 80px;
+}
+
 /* TESTIMONIALS */
 .home-page .testimonials {
     color: white;
     padding: 120px 60px;
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("images/cruiseship.png") center center / cover no-repeat;
+    background: #162a2c;
 }
 
 .home-page .testimonial-card {
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Big Caslon";
     opacity: 0.85;
     transition: 0.3s;
 }
 
-.testimonials-image {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-
 .home-page .testimonial-card:hover {
     transform: translateY(-8px);
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    overflow: hidden;
+}
+.home-page .image-section {
+    padding: 0;
+}
+
+.image {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 /* ------------------------------------------------------------------------*/
@@ -605,24 +747,6 @@ footer::before {
 .offers-page .card__description {
     margin: 0 1.5rem 1.5rem;
     color: #5a5a5a;
-}
-
-.offers-page .button {
-    margin: 0 1.5rem 1.5rem;
-    padding: 0.9rem 2rem;
-    border: 1px solid #c8a96a;
-    background: transparent;
-    color: #c8a96a;
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.offers-page .button:hover {
-    background: #c8a96a;
-    color: #0f1720;
 }
 
 /* ------------------------------------------------------------------------*/
