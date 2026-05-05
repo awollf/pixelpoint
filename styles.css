@@ -217,6 +217,29 @@ img {
     padding: 70px 8% 40px;
     text-align: left;
 }
+<<<<<<< HEAD
+=======
+
+.page-heading h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    border-left: 6px solid #d9b477;
+    padding-left: 1.5rem;
+}
+
+.page-heading p {
+    padding-left: calc(1.5rem + 6px);
+    font-size: 1.25rem;
+    max-width: 600px;
+}
+
+.dine-page .page-heading {
+    text-align: left;
+}
+
+/* --------------------------- GLOBAL SECTIONS --------------------------- */
+>>>>>>> 7173512 (changed HTML classes and CSS so the heading looks the same as other pages)
 
 .page-heading h2 {
     font-size: 3rem;
@@ -399,9 +422,8 @@ img {
 .experiences-page .card {
     height: 520px;
 }
-/* --------------------------- DINE PAGE --------------------------- */
-/* --------------------------- DINE PAGE --------------------------- */
 
+/* --------------------------- DINE PAGE --------------------------- */
 .dine-page .title-tag {
     text-align: center;
     padding: 50px 50px 40px;
@@ -455,8 +477,8 @@ img {
     text-align: center;
 }
 
-.dine-page .image-label h2 {
-    font-family: "IBM Plex Serif", serif;
+.dine-page .image-label h1 {
+    font-family: "BigCaslon";
     font-size: 2.5rem;
     font-weight: 400;
     color: #fefcf6;
