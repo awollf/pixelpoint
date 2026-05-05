@@ -2,157 +2,182 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
         <title>Home</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="script.js" defer></script>
+        <link
+            rel="stylesheet"
+            href="styles.css" />
+        <script
+            src="script.js"
+            defer></script>
     </head>
+
     <body class="home-page">
         <header class="header">
             <nav class="navbar">
                 <h1 class="header__title">
-                    <a href="home.html" class="header__brand">
+                    <a
+                        href="home.html"
+                        class="header__brand">
                         <img
                             src="logos/WPH Logo 3.png"
                             alt="West Point Hotel"
-                            class="header__logo"
-                        />
+                            class="header__logo" />
                     </a>
                 </h1>
 
                 <ul class="nav-links">
                     <li class="nav-links__item">
-                        <a class="nav-links__link" href="home.html">Home</a>
+                        <a
+                            class="nav-links__link"
+                            href="home.html"
+                            >Home</a
+                        >
                     </li>
                     <li class="nav-links__item">
-                        <a class="nav-links__link" href="stay.html">Stay</a>
+                        <a
+                            class="nav-links__link"
+                            href="stay.html"
+                            >Stay</a
+                        >
                     </li>
                     <li class="nav-links__item">
-                        <a class="nav-links__link" href="experiences.html"
+                        <a
+                            class="nav-links__link"
+                            href="experiences.html"
                             >Experiences</a
                         >
                     </li>
                     <li class="nav-links__item">
-                        <a class="nav-links__link" href="dine.html">Dine</a>
+                        <a
+                            class="nav-links__link"
+                            href="dine.html"
+                            >Dine</a
+                        >
                     </li>
                     <li class="nav-links__item">
-                        <a class="nav-links__link" href="events.html">Events</a>
+                        <a
+                            class="nav-links__link"
+                            href="events.html"
+                            >Events</a
+                        >
                     </li>
                     <li class="nav-links__item">
-                        <a class="nav-links__link" href="offers.html">Offers</a>
+                        <a
+                            class="nav-links__link"
+                            href="offers.html"
+                            >Offers</a
+                        >
                     </li>
                     <li class="nav-links__item">
-                        <a class="nav-links__link" href="about.html">About</a>
+                        <a
+                            class="nav-links__link"
+                            href="about.html"
+                            >About</a
+                        >
                     </li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <!-- HERO -->
             <section class="hero hero--home">
                 <img
                     class="hero__image"
                     src="images/homeImage.png"
-                    alt="West Point Hotel"
-                />
+                    alt="West Point Hotel" />
 
                 <div class="hero__content">
                     <h1 class="hero__title">
                         Stay<br />
                         Starts<br />
-                        Here<br />
+                        Here
                     </h1>
                     <p class="hero__description">
                         Experience luxury and comfort in the heart of the
                         Caribbean
                     </p>
                     <button
-                        class="button button--primary"
-                        onclick="bookNow()"
-                        style="display: inline-block; margin-top: 30px"
-                    >
+                        class="btn"
+                        onclick="bookNow()">
                         Book Now
                     </button>
                 </div>
-
-                <button class="hero__cta" data-link="stay.html">
-                        Book Now <span class="arrow">></span>
-                    </button>
             </section>
 
-            <!-- VIDEO -->
             <section class="home__video">
-                <video class="hero__video" autoplay muted loop playsinline>
-                    <source src="videos/homevideo.mp4" type="video/mp4" />
+                <video
+                    class="hero__video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline>
+                    <source
+                        src="videos/homevideo.mp4"
+                        type="video/mp4" />
                 </video>
             </section>
 
-            <!-- ABOUT US -->
             <section class="aboutus">
-                <h2 class="section__title" style="font-size: 70px">About Us</h2>
-                <div class="aboutus-card">
-                    <p class="aboutus-text">
-                        At West Point Hotel, we focus on delivering a relaxing
-                        and seamless stay. <br />Our thoughtfully designed
-                        spaces, modern amenities, and dedicated service ensure
-                        every guest feels comfortable from check-in to
-                        check-out.
-                    </p>
-                </div>
+                <h2 class="section__title">About Us</h2>
+                <p class="aboutus-text">
+                    At West Point Hotel, we focus on delivering a relaxing and
+                    seamless stay. Our thoughtfully designed spaces, modern
+                    amenities, and dedicated service ensure every guest feels
+                    comfortable from check-in to check-out.
+                </p>
             </section>
 
-            <!-- EXPERIENCE -->
+            <!-- EXPERIENCE GALLERY -->
             <section class="experience">
                 <h2 class="section__title">Discover Our Experiences</h2>
+
                 <div class="experience__grid">
-                    <div class="card">
+                    <div class="gallery">
                         <img
-                            class="card__image"
+                            class="gallery__image"
                             src="images/suiteImage.png"
-                            alt="Stay"
-                        />
-                        <div class="card__overlay">
-                            <h3 class="card__title">Stay</h3>
+                            alt="Stay" />
+                        <div class="gallery__overlay">
+                            <h3 class="gallery__title">Stay</h3>
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="gallery">
                         <img
-                            class="card__image"
+                            class="gallery__image"
                             src="images/hightide.png"
-                            alt="Dine"
-                        />
-                        <div class="card__overlay">
-                            <h3 class="card__title">Dine</h3>
+                            alt="Dine" />
+                        <div class="gallery__overlay">
+                            <h3 class="gallery__title">Dine</h3>
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="gallery">
                         <img
-                            class="card__image"
+                            class="gallery__image"
                             src="images/celebration.png"
-                            alt="Events"
-                        />
-                        <div class="card__overlay">
-                            <h3 class="card__title">Events</h3>
+                            alt="Events" />
+                        <div class="gallery__overlay">
+                            <h3 class="gallery__title">Events</h3>
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="gallery">
                         <img
-                            class="card__image"
+                            class="gallery__image"
                             src="images/snorkeling.png"
-                            alt="Experiences"
-                        />
-                        <div class="card__overlay">
-                            <h3 class="card__title">Experiences</h3>
+                            alt="Experiences" />
+                        <div class="gallery__overlay">
+                            <h3 class="gallery__title">Experiences</h3>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- STAY -->
+            <!-- STAY CARDS -->
             <section class="stay">
                 <h2 class="section__title">Your Perfect Stay Starts Here</h2>
 
@@ -161,106 +186,105 @@
                         <img
                             class="card__image"
                             src="images/suiteImage.png"
-                            alt="Suite"
-                        />
-                        <h3 class="card__title">Suites</h3>
-                        <p class="card__price">$599 / night</p>
-                        <button
-                            class="button button--primary"
-                            onclick="bookNow()"
-                        >
-                            Book Now
-                        </button>
+                            alt="Suite" />
+
+                        <div class="card__overlay">
+                            <div class="card__text">
+                                <p class="card__label">Stay</p>
+                                <h3 class="card__title">Suites</h3>
+                            </div>
+                            <p class="card__description">$599 / night</p>
+                        </div>
                     </div>
 
                     <div class="card">
                         <img
                             class="card__image"
                             src="images/bungalowImage.png"
-                            alt="Bungalow"
-                        />
-                        <h3 class="card__title">Bungalows</h3>
-                        <p class="card__price">$999 / night</p>
-                        <button
-                            class="button button--primary"
-                            onclick="bookNow()"
-                        >
-                            Book Now
-                        </button>
+                            alt="Bungalow" />
+
+                        <div class="card__overlay">
+                            <div class="card__text">
+                                <p class="card__label">Stay</p>
+                                <h3 class="card__title">Bungalows</h3>
+                            </div>
+                            <p class="card__description">$999 / night</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- SERVICE -->
+            <!-- SERVICES GALLERY -->
             <section class="services">
                 <h2 class="section__title">Services Designed Around You</h2>
 
                 <div class="services__grid">
-                    <div class="card">
-                        <h3 class="card__title">Helicopter</h3>
+                    <div class="gallery">
                         <img
-                            class="card__image"
+                            class="gallery__image"
                             src="images/helicopter.png"
-                            alt="Jet"
-                        />
+                            alt="Helicopter" />
+                        <div class="gallery__overlay">
+                            <h3 class="gallery__title">Helicopter</h3>
+                        </div>
                     </div>
 
-                    <div class="card">
-                        <h3 class="card__title">Taxi & Car Rental</h3>
+                    <div class="gallery">
                         <img
-                            class="card__image"
+                            class="gallery__image"
                             src="images/car.png"
-                            alt="Yacht"
-                        />
+                            alt="Taxi and car rental" />
+                        <div class="gallery__overlay">
+                            <h3 class="gallery__title">Taxi & Car Rental</h3>
+                        </div>
                     </div>
 
-                    <div class="card">
-                        <h3 class="card__title">Private Jet</h3>
+                    <div class="gallery">
                         <img
-                            class="card__image"
+                            class="gallery__image"
                             src="images/privatejet.png"
-                            alt="Helicopter"
-                        />
+                            alt="Private jet" />
+                        <div class="gallery__overlay">
+                            <h3 class="gallery__title">Private Jet</h3>
+                        </div>
                     </div>
 
-                    <div class="card">
-                        <h3 class="card__title">Cruise</h3>
+                    <div class="gallery">
                         <img
-                            class="card__image"
+                            class="gallery__image"
                             src="images/cruiseship.png"
-                            alt="Transfer"
-                        />
+                            alt="Cruise" />
+                        <div class="gallery__overlay">
+                            <h3 class="gallery__title">Cruise</h3>
+                        </div>
                     </div>
 
-                    <div class="card">
-                        <h3 class="card__title">VIP Transfer Service</h3>
+                    <div class="gallery">
                         <img
-                            class="card__image"
+                            class="gallery__image"
                             src="images/transferservice.png"
-                            alt="Transfer"
-                        />
+                            alt="VIP transfer service" />
+                        <div class="gallery__overlay">
+                            <h3 class="gallery__title">VIP Transfer Service</h3>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- TESTIMONIAL -->
             <section class="testimonials">
                 <div class="testimonials__grid">
                     <div class="testimonial-card">
                         <p class="testimonial-text">
-                            “<b style="font-size: 100px">W</b>est Point Hotel<br />
-                            offers elegant event spaces and a seamless,<br />
-                            professional experience. Every detail is<br />
-                            thoughtfully executed, creating the perfect
-                            setting<br />
-                            for any occasion.
+                            “West Point Hotel offers elegant event spaces and a
+                            seamless, professional experience. Every detail is
+                            thoughtfully executed, creating the perfect setting
+                            for any occasion.”
                         </p>
                     </div>
                 </div>
             </section>
         </main>
 
-        <!-- FOOTER -->
         <footer>
             <div class="footer-container">
                 <div class="footer-left">
@@ -273,8 +297,7 @@
                         <input
                             type="email"
                             placeholder="Enter your email"
-                            required
-                        />
+                            required />
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
@@ -286,6 +309,7 @@
                     <p>Email: info@westpointhotel.com</p>
                 </div>
             </div>
+
             <div class="footer-bottom">
                 <div class="footer-center">
                     <p>&copy; 2026 West Point Hotel. All rights reserved.</p>
