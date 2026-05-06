@@ -42,12 +42,6 @@
     src: url("fonts/Antic-Regular.ttf");
 }
 
-/* COLOUR PALETTE */
-
-/* WPH #454545, 162A2C, D9D9D9, E2ECED, D9B477, FEFCF6  */
-/* HT 162A2C, 18203A, AFAFAF, FEFCF6, A58D66 */
-/* HH 2E2D2D, 003B51, 195E69, 445F70, EBFFFE, C1D7E4 */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -85,15 +79,6 @@ img {
     z-index: 1000;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 5rem;
-    background: rgba(15, 23, 32, 0.2);
-    backdrop-filter: blur(8px);
-}
-
 .header__title {
     margin: 0;
     display: flex;
@@ -120,6 +105,15 @@ img {
 }
 
 /* NAV */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5rem;
+    background: rgba(15, 23, 32, 0.2);
+    backdrop-filter: blur(8px);
+}
 
 .nav-links {
     display: flex;
@@ -193,10 +187,8 @@ img {
 .hero__content {
     position: absolute;
     top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    max-width: 36rem;
-    color: #fefcf6;
+    left: 8%;
+    transform: translateY(-40%);
     z-index: 2;
 }
 
@@ -212,52 +204,10 @@ img {
     line-height: 1.8;
 }
 
-/* --------------------------- GLOBAL PAGE HEADERS --------------------------- */
-.page-heading {
-    padding: 70px 8% 40px;
-    text-align: left;
-}
-<<<<<<< HEAD
-=======
-
-.page-heading h2 {
-    font-size: 3rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-    border-left: 6px solid #d9b477;
-    padding-left: 1.5rem;
-}
-
-.page-heading p {
-    padding-left: calc(1.5rem + 6px);
-    font-size: 1.25rem;
-    max-width: 600px;
-}
-
-.dine-page .page-heading {
-    text-align: left;
-}
-
-/* --------------------------- GLOBAL SECTIONS --------------------------- */
->>>>>>> 7173512 (changed HTML classes and CSS so the heading looks the same as other pages)
-
-.page-heading h2 {
-    font-size: 3rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-    border-left: 6px solid #d9b477;
-    padding-left: 1.5rem;
-}
-
-.page-heading p {
-    padding-left: calc(1.5rem + 6px);
-    padding-bottom: 150px;
-    font-size: 1.25rem;
-    max-width: 600px;
-}
-
-.dine-page .page-heading {
-    text-align: left;
+.hero-bar {
+    width: 100%;
+    height: 100px;
+    background-color: #454545;
 }
 
 /* Back Button */
@@ -287,14 +237,42 @@ img {
     font-size: 1.1rem;
 }
 
+/* INTRO */
+
+.intro {
+    padding: 5rem 5rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.intro h1::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 5px;
+    width: 4px;
+    height: 40px;
+    background: #c8a96a;
+}
+
+.intro p {
+    color: #666;
+}
+
 /* EXPERIENCE */
 
-.experience {
+.discovermore {
     padding: 5rem;
     text-align: center;
 }
 
-.experience__grid {
+.discovermore__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
@@ -302,7 +280,7 @@ img {
     margin: 0 auto;
 }
 
-.experience .card {
+.discovermore .card {
     position: relative;
     overflow: hidden;
     height: 320px;
@@ -310,7 +288,7 @@ img {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-.experience .card::before {
+.discovermore .card::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -319,11 +297,11 @@ img {
     z-index: 1;
 }
 
-.experience .card:hover::before {
+.discovermore .card:hover::before {
     opacity: 0;
 }
 
-.experience .card__image {
+.discovermore .card__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -332,11 +310,11 @@ img {
     z-index: 0;
 }
 
-.experience .card:hover .card__image {
+.discovermore .card:hover .card__image {
     transform: scale(1.08);
 }
 
-.experience .card__overlay {
+.discovermore .card__overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(
@@ -347,7 +325,7 @@ img {
     z-index: 1;
 }
 
-.experience .card__title {
+.discovermore .card__title {
     position: absolute;
     bottom: 70px;
     left: 20px;
@@ -357,9 +335,11 @@ img {
     transition: 0.4s ease;
 }
 
-.experience .card:hover .card__title {
+.discovermore .card:hover .card__title {
     transform: translateY(0);
 }
+
+/* SECTION */
 
 .section__title {
     font-size: 2rem;
@@ -386,274 +366,19 @@ img {
     bottom: 70px;
 }
 
-.stay .card__title {
-    margin: 0;
-    color: #fefcf6;
-    white-space: nowrap;
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    z-index: 1;
 }
 
 .card__image {
     width: 100%;
-    object-fit: cover;
-}
-
-.card__overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.75),
-        rgba(0, 0, 0, 0.1)
-    );
-    opacity: 1;
-    transition: 0.4s ease;
-}
-
-/* --------------------------- EXPERIENCES PAGE --------------------------- */
-.experiences-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 315px);
-    justify-content: center;
-    column-gap: 170px;
-    row-gap: 110px;
-    padding: 40px 8% 140px;
-}
-
-.experiences-page .card {
-    height: 520px;
-}
-
-/* --------------------------- DINE PAGE --------------------------- */
-.dine-page .title-tag {
-    text-align: center;
-    padding: 50px 50px 40px;
-}
-
-.dine-page .title-tag h2 {
-    margin: 0 0 12px;
-}
-
-.dine-page .page-title {
-    color: #003b51;
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.dine-page .title-tag h3 {
-    margin-bottom: 85px;
-}
-
-.dine-page .restaurant-row {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 34px;
-    align-items: start;
-    margin-bottom: 100px;
-}
-
-.dine-page .restaurant-image {
-    position: relative;
-    width: 100%;
-    max-width: 714px;
-    height: 517px;
-    border-radius: 8px;
-    overflow: visible;
-}
-
-.dine-page .restaurant-image img {
-    width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
-}
-
-.dine-page .image-label {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translate(-50%, -80%);
-    padding: 10px 60px;
-    border-radius: 4px;
-    text-align: center;
-}
-
-.dine-page .image-label h1 {
-    font-family: "BigCaslon";
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: #fefcf6;
-    margin: 0;
-    line-height: 1;
-    white-space: nowrap;
-}
-
-.dine-page .image-label-gold {
-    background-color: #a58d66;
-}
-
-.dine-page .image-label-dark {
-    background-color: #162a2c;
-}
-
-.dine-page .restaurant-content {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-    max-width: 700px;
-    margin-top: -20px;
-    text-align: left;
-}
-
-.dine-page .restaurant-content h2 {
-    margin: 15px 0 0;
-}
-
-.dine-page .restaurant-content h3 {
-    margin: 0;
-    color: #686867;
-    font-weight: 300;
-}
-
-.dine-page .restaurant-content p {
-    margin: 0 0 15px;
-}
-
-.dine-page .restaurant-actions {
-    display: flex;
-    gap: 20px;
-}
-
-.dine-page .restaurant-actions .btn-gold-outline {
-    flex: 1;
-    text-align: center;
-}
-
-.dine-page .phone {
-    align-self: flex-end;
-    margin-top: 10px;
-    padding: 10px 20px;
-    border: 1px solid #0f1720;
-    border-radius: 6px;
-    background-color: #f2f2f2;
-    color: #0f1720;
-    font-size: 14px;
-}
-
-/* --------------------------- DINE PAGE --------------------------- */
-.dine-page .restaurant-row {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 34px;
-    align-items: start;
-    margin-bottom: 100px;
-}
-
-.dine-page .restaurant-image {
-    position: relative;
-    width: 100%;
-    max-width: 714px;
-    height: 517px;
-    border-radius: 8px;
-    overflow: visible;
-}
-
-.dine-page .restaurant-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.dine-page .image-label {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translate(-50%, -80%);
-    padding: 10px 60px;
-    border-radius: 4px;
-    text-align: center;
-}
-
-.dine-page .image-label h1 {
-    font-family: "BigCaslon";
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: #fefcf6;
-    margin: 0;
-    line-height: 1;
-    white-space: nowrap;
-}
-
-.dine-page .image-label-gold {
-    background-color: #a58d66;
-}
-
-.dine-page .image-label-dark {
-    background-color: #162a2c;
-}
-
-.dine-page .restaurant-content {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-    max-width: 700px;
-    margin-top: -20px;
-    text-align: left;
-}
-
-.dine-page .restaurant-content h2 {
-    margin: 15px 0 0;
-}
-
-.dine-page .restaurant-content h3 {
-    margin: 0;
-    color: #686867;
-    font-weight: 300;
-}
-
-.dine-page .restaurant-content p {
-    margin: 0 0 15px;
-}
-
-.dine-page .restaurant-actions {
-    display: flex;
-    gap: 20px;
-}
-
-.dine-page .restaurant-actions .btn-gold-outline {
-    flex: 1;
-    text-align: center;
-}
-
-.dine-page .phone {
-    align-self: flex-end;
-    margin-top: 10px;
-    padding: 10px 20px;
-    border: 1px solid #0f1720;
-    border-radius: 6px;
-    background-color: #f2f2f2;
-    color: #0f1720;
-    font-size: 14px;
-}
-
-/* --------------------------- OFFERS PAGE --------------------------- */
-
-.offers-page .offers {
-    padding: 6rem 5rem;
-}
-
-.offers-page .offers_grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.offers-page .card {
-    background: #ffffff;
-    height: auto;
-    min-height: 420px;
+    transition: transform 0.6s ease;
 }
 
 .card__content {
@@ -802,9 +527,8 @@ footer::before {
         max-width: none;
     }
 
-    section:not(.hero):not(.page-heading) {
-        padding: 120px 80px;
-        text-align: center;
+    .home-page .offers {
+        padding: 4rem 2rem;
     }
 
     footer {
@@ -830,7 +554,7 @@ footer::before {
     position: absolute;
     top: 50%;
     left: 8%;
-    transform: translateY(-50%);
+    transform: translateY(-35%);
     color: #fefcf6;
     max-width: 500px;
     align-items: flex-start;
@@ -1034,46 +758,343 @@ footer::before {
 
 /* ------------------------------------------------------------------------*/
 
+/* ------------------------------ STAY PAGE ------------------------------ */
+
+/* ------------------------------ STAY PAGE ------------------------------ */
+
+.stay {
+    padding: 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stay__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.stay__image {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.stay__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stay__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 420px;
+}
+
+.stay__btn {
+    background: #1c2b2e;
+    border: none;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    align-self: flex-start;
+}
+
+.stay__btn:hover {
+    background: #c8a96a;
+    color: #0f1720;
+}
+
+.stay__text {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .stay__row {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .stay__image {
+        height: 220px;
+    }
+}
+
+/* ------------------------------------------------------------------------*/
+
+/* -------------------------- EXPERIENCES PAGE --------------------------- */
+
+.experiences__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    justify-content: center;
+    gap: 80px 120px;
+    padding: 80px 0;
+}
+
+.experiences__grid .card {
+    width: 320px;
+    height: 420px;
+}
+
+.experiences__grid .card__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.experiences__grid .card__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75) 0%,
+        rgba(0, 0, 0, 0.2) 40%,
+        rgba(0, 0, 0, 0) 70%
+    );
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.experiences__grid .card__text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.experiences__grid .card__label {
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.experiences__grid .card__title {
+    font-size: 0.95rem;
+    color: #fff;
+    margin: 0;
+}
+
+.experiences__grid .card__description {
+    font-size: 0.7rem;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.experiences__grid .card:hover .card__image {
+    transform: scale(1.08);
+}
+
+/* TABLET */
+@media (max-width: 1100px) {
+    .experiences__grid {
+        grid-template-columns: repeat(2, 415px);
+        gap: 60px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 950px) {
+    .experiences__grid {
+        grid-template-columns: minmax(280px, 630px);
+        padding: 40px 2rem 100px;
+    }
+}
+
+/* ------------------------------------------------------------------------*/
+
+/* ------------------------------ DINE PAGE ------------------------------ */
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.restaurant {
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant__image {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.restaurant__image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.restaurant__image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.2),
+        transparent
+    );
+}
+
+.restaurant__overlay {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: #fff;
+    z-index: 2;
+}
+
+.restaurant__overlay span {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+.restaurant__overlay h2 {
+    font-size: 1.8rem;
+    margin: 5px 0;
+}
+
+.restaurant__overlay p {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+/* 아래 텍스트 영역 */
+.restaurant__content {
+    max-width: 800px;
+    padding: 40px 40px 0;
+}
+
+.restaurant__content h2 {
+    margin-bottom: 10px;
+}
+
+.restaurant__content h3 {
+    color: #666;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.restaurant__content p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* ------------------------------------------------------------------------*/
+
+/* ----------------------------- EVENTS PAGE ----------------------------- */
+
+.events {
+    padding: 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.events__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* CARD */
+.events__card {
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* IMAGE */
+.events__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+/* OVERLAY */
+.events__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.2)
+    );
+    color: #fff;
+}
+
+/* TEXT BLOCK */
+.events__content {
+    max-width: 80%;
+}
+
+.events__title {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.events__text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* LINK */
+.events__link {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    align-self: flex-end;
+}
+
+/* HOVER */
+.events__card:hover .events__image {
+    transform: scale(1.06);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .events__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .events__card {
+        height: 220px;
+    }
+}
+
+/* ------------------------------------------------------------------------*/
+
 /* ----------------------------- OFFERS PAGE ----------------------------- */
 
 /* OFFERS */
 
 .offers-page .offers {
     padding: 6rem 5rem;
-}
-
-/* INTRO */
-
-.offers-intro {
-    padding: 5rem 5rem 2rem;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.offers-intro h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    position: relative;
-}
-
-.offers-intro h1::before {
-    content: "";
-    position: absolute;
-    left: -20px;
-    top: 5px;
-    width: 4px;
-    height: 40px;
-    background: #c8a96a;
-}
-
-.offers-intro p {
-    color: #666;
-}
-
-.offers-page .offers__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
 }
 
 /* OFFERS CARD */
@@ -1117,4 +1138,12 @@ footer::before {
     font-weight: 400;
 }
 
+.offers-page .offers__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
 /* ------------------------------------------------------------------------*/
+
+/* ------------------------------ ABOUT PAGE ----------------------------- */

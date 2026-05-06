@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body class="stay-page">
+        <header class="header">
+            <nav class="navbar">
+                <h1 class="header__title">
+                    <a href="home.html" class="header__brand">
+                        <img
+                            src="logos/WPH Logo 3.png"
+                            alt="West Point Hotel"
+                            class="header__logo"
+                        />
+                    </a>
+                </h1>
+
+                <ul class="nav-links">
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="stay.html">Stay</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="experiences.html"
+                            >Experiences</a
+                        >
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="dine.html">Dine</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="offers.html">Offers</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <button class="back_button" data-action="back">
+                <span class="arrow"><</span> Back
+            </button>
+            <section class="hero hero--stay">
+                <img
+                    class="hero__image"
+                    src="images/stayImage.png"
+                    alt="Stay"
+                />
+            </section>
+
+            <section class="intro">
+                <div class="intro__content">
+                    <h1 style="font-family: Optima">Stay</h1>
+                    <p>
+                        Indulge in thoughtfully designed spaces, tailored for
+                        comfort and quiet sophistication.
+                    </p>
+                </div>
+            </section>
+
+            <section class="stay">
+                <div class="stay__row">
+                    <div class="stay__image">
+                        <img src="images/suiteImage.png" alt="Bungalow" />
+                    </div>
+
+                    <div class="stay__content">
+                        <button class="btn stay__btn">
+                            View Bungalow Details
+                        </button>
+                        <p class="stay__text">
+                            A collection of private bungalows designed for a VIP
+                            experience, featuring private pools, full living
+                            spaces, and elevated comfort.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="stay__row">
+                    <div class="stay__image">
+                        <img src="images/room.png" alt="Room" />
+                    </div>
+
+                    <div class="stay__content">
+                        <button class="btn stay__btn">View Room Details</button>
+                        <p class="stay__text">
+                            Refined guest rooms with king or queen bed options,
+                            private bathrooms, and dedicated work spaces
+                            designed for comfort and ease.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="discovermore">
+                <h2 class="section__title">Discover Our Experiences</h2>
+                <div class="discovermore__grid">
+                    <div class="card" data-link="stay.html">
+                        <img
+                            class="card__image"
+                            src="images/suiteImage.png"
+                            alt="Stay"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Stay</h3>
+                        </div>
+                    </div>
+
+                    <div class="card" data-link="dine.html">
+                        <img
+                            class="card__image"
+                            src="images/hightide.png"
+                            alt="Dine"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Dine</h3>
+                        </div>
+                    </div>
+
+                    <div class="card" data-link="events.html">
+                        <img
+                            class="card__image"
+                            src="images/celebration.png"
+                            alt="Events"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Events</h3>
+                        </div>
+                    </div>
+
+                    <div class="card" data-link="experiences.html">
+                        <img
+                            class="card__image"
+                            src="images/snorkeling.png"
+                            alt="Experiences"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Experiences</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h2>Newsletter</h2>
+                    <p>
+                        Subscribe to our newsletter for exclusive offers and
+                        updates!
+                    </p>
+                    <form class="newsletter-form">
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-right">
+                    <h2>West Point Hotel</h2>
+                    <p>Location: 123 Main Street, Caribbean</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@westpointhotel.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-center">
+                    <p>&copy; 2026 West Point Hotel. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
