@@ -49,9 +49,10 @@
         </header>
 
         <main>
-            <button class="back_button" data-link="home.html">
+            <button class="back_button" data-action="back">
                 <span class="arrow"><</span> Back
             </button>
+
             <section class="hero hero--offers">
                 <img
                     class="hero__image"
@@ -60,8 +61,8 @@
                 />
             </section>
 
-            <section class="offers-intro">
-                <div class="offers-intro__content">
+            <section class="intro">
+                <div class="intro__content">
                     <h1 style="font-family: Optima">Exclusive Offers</h1>
                     <p>
                         Discover curated packages designed to enhance every
@@ -106,32 +107,51 @@
                 </div>
             </section>
 
-            <section class="experience">
-                <h2 class="section__title">Discover Our Hotel</h2>
-
-                <div class="experience__grid">
-                    <div class="card">
-                        <img class="card__image" src="images/suiteImage.png" />
-                        <div class="card__overlay"></div>
-                        <h3 class="card__title">Stay</h3>
+            <section class="discovermore">
+                <h2 class="section__title">Discover Our Experiences</h2>
+                <div class="discovermore__grid">
+                    <div class="card" data-link="stay.html">
+                        <img
+                            class="card__image"
+                            src="images/suiteImage.png"
+                            alt="Stay"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Stay</h3>
+                        </div>
                     </div>
 
-                    <div class="card">
-                        <img class="card__image" src="images/hightide.png" />
-                        <div class="card__overlay"></div>
-                        <h3 class="card__title">Dine</h3>
+                    <div class="card" data-link="dine.html">
+                        <img
+                            class="card__image"
+                            src="images/hightide.png"
+                            alt="Dine"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Dine</h3>
+                        </div>
                     </div>
 
-                    <div class="card">
-                        <img class="card__image" src="images/celebration.png" />
-                        <div class="card__overlay"></div>
-                        <h3 class="card__title">Events</h3>
+                    <div class="card" data-link="events.html">
+                        <img
+                            class="card__image"
+                            src="images/celebration.png"
+                            alt="Events"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Events</h3>
+                        </div>
                     </div>
 
-                    <div class="card">
-                        <img class="card__image" src="images/snorkeling.png" />
-                        <div class="card__overlay"></div>
-                        <h3 class="card__title">Experiences</h3>
+                    <div class="card" data-link="experiences.html">
+                        <img
+                            class="card__image"
+                            src="images/snorkeling.png"
+                            alt="Experiences"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Experiences</h3>
+                        </div>
                     </div>
                 </div>
             </section>
