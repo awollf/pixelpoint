@@ -853,9 +853,7 @@ footer::before {
 }
 
 .experiences-page .card__image {
-    width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .experiences-page .card__text {
