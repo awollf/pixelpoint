@@ -2,155 +2,171 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Dine</title>
-        <link
-            rel="stylesheet"
-            href="styles.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
     </head>
+
     <body class="dine-page">
         <header class="header">
             <nav class="navbar">
-                <h1 class="header_title">
-                    <a
-                        href="home.html"
-                        class="header_brand">
-                        <img
-                            src="logos/WPH Logo 3.png"
-                            alt="West Point Hotel"
-                            class="header_logo" />
+                <h1 class="header__title">
+                    <a href="home.html" class="header__brand">
+                        <img src="logos/WPH Logo 3.png" class="header__logo" />
                     </a>
                 </h1>
 
                 <ul class="nav-links">
-                    <li class="nav-links_item">
-                        <a
-                            class="nav-links_link"
-                            href="home.html"
-                            >Home</a
-                        >
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="home.html">Home</a>
                     </li>
-                    <li class="nav-links_item">
-                        <a
-                            class="nav-links_link"
-                            href="#"
-                            >Stay</a
-                        >
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="stay.html">Stay</a>
                     </li>
-                    <li class="nav-links_item">
-                        <a
-                            class="nav-links_link"
-                            href="experiences.html"
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="experiences.html"
                             >Experiences</a
                         >
                     </li>
-                    <li class="nav-links_item">
-                        <a
-                            class="nav-links_link"
-                            href="#"
-                            >Dine</a
-                        >
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="dine.html">Dine</a>
                     </li>
-                    <li class="nav-links_item">
-                        <a
-                            class="nav-links_link"
-                            href="#"
-                            >Events</a
-                        >
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="events.html">Events</a>
                     </li>
-                    <li class="nav-links_item">
-                        <a
-                            class="nav-links_link"
-                            href="offers.html"
-                            >Offers</a
-                        >
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="offers.html">Offers</a>
                     </li>
-                    <li class="nav-links_item">
-                        <a
-                            class="nav-links_link"
-                            href="#"
-                            >About</a
-                        >
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="about.html">About</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <section class="hero">
-            <img
-                class="hero_image"
-                src="images/dine-pg-hero.png"
-                alt="plate of food" />
 
-            <div class="hero_content">
-                <h1 class="hero_title">Dine</h1>
-            </div>
-        </section>
+        <main>
+            <button class="back_button" data-action="back">
+                <span class="arrow"><</span> Back
+            </button>
 
-        <section class="page-heading">
-            <h2>A Taste of Excellence</h2>
-            <p>
-                Indulge in refined flavors, curated menus, and inviting spaces
-                designed to elevate every dining experience.
-            </p>
-        </section>
-        <section class="restaurants">
-            <div class="restaurant-row">
-                <div class="restaurant-image">
-                    <div class="image-label image-label-gold">
-                        <h1>HighTide</h1>
-                    </div>
-                    <img
-                        src="images/HighTide.png"
-                        alt="hightide dining room"
-                        class="hightide-img" />
-                </div>
-                <div class="restaurant-content">
-                    <h2>HighTide Fine Dining</h2>
-                    <h3 class="subheading">Luxury Cuisine</h3>
+            <section class="hero hero--dine">
+                <img
+                    class="hero__image"
+                    src="images/dineImage.png"
+                    alt="Dine"
+                />
+            </section>
+
+            <section class="intro">
+                <div class="intro__content">
+                    <h1 style="font-family: Optima">Dine</h1>
                     <p>
-                        Indulge in a thoughtfully curated menu featuring fresh,
-                        seasonal ingredients and expertly crafted dishes.
-                        Whether for a romantic dinner or a special gathering,
-                        our restaurant offers an elegant atmosphere paired with
-                        impeccable service.
+                        Savor world-class cuisine crafted with precision,
+                        passion, and the finest ingredients.
                     </p>
-                    <div class="restaurant-actions">
-                        <button class="btn-gold-outline">View Menu</button>
-                        <button class="btn-gold-outline">Reserve</button>
-                    </div>
-                    <div class="phone">+1 123 432 8879</div>
                 </div>
-            </div>
-            <div class="restaurant-row">
-                <div class="restaurant-image">
-                    <div class="image-label image-label-dark">
-                        <h1>Harbour House</h1>
+            </section>
+
+            <section class="restaurants">
+                <div class="restaurant">
+                    <div class="restaurant__image">
+                        <img src="images/hightide2.png" />
+                        <div class="restaurant__overlay">
+                            <span>Explore</span>
+                            <h2>HighTide</h2>
+                            <p>View Details ></p>
+                        </div>
                     </div>
-                    <img
-                        src="images/Harbour House.png"
-                        alt="harbour house dining room"
-                        class="harbour-img" />
-                </div>
-                <div class="restaurant-content">
-                    <h2>Harbour House Restaurant and Bar</h2>
-                    <h3>
-                        Join us for classic cocktails and signature french toast
-                    </h3>
-                    <p>
-                        Enjoy handcrafted cocktails, fine wines, and freshly
-                        brewed coffee in a welcoming setting—perfect for casual
-                        meetings or laid-back evenings.
-                    </p>
-                    <div class="restaurant-actions">
-                        <button class="btn-gold-outline">View Menu</button>
-                        <button class="btn-gold-outline">Reserve</button>
+
+                    <div class="restaurant__content">
+                        <h2>HighTide Restaurant</h2>
+                        <h3>Luxury Cuisine</h3>
+                        <p>
+                            Indulge in a thoughtfully curated menu featuring
+                            fresh, seasonal ingredients and expertly crafted
+                            dishes. Whether for a romantic dinner or a special
+                            gathering, our restaurant offers an elegant
+                            atmosphere paired with impeccable service.
+                        </p>
                     </div>
-                    <div class="phone">+1 123 432 8879</div>
                 </div>
-            </div>
-        </section>
+
+                <div class="restaurant">
+                    <div class="restaurant__image">
+                        <img src="images/habourhouse2.png" />
+                        <div class="restaurant__overlay">
+                            <span>Explore</span>
+                            <h2>Harbour House</h2>
+                            <p>View Details ></p>
+                        </div>
+                    </div>
+
+                    <div class="restaurant__content">
+                        <h2>Harbour House Restaurant and Bar</h2>
+                        <h3>
+                            Join us for classic cocktails and signature french
+                            toast
+                        </h3>
+                        <p>
+                            Enjoy handcrafted cocktails and freshly brewed
+                            coffee in a welcoming setting—perfect for casual
+                            meetings or laid-back evenings.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="discovermore">
+                <h2 class="section__title">Discover Our Experiences</h2>
+                <div class="discovermore__grid">
+                    <div class="card" data-link="stay.html">
+                        <img
+                            class="card__image"
+                            src="images/suiteImage.png"
+                            alt="Stay"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Stay</h3>
+                        </div>
+                    </div>
+
+                    <div class="card" data-link="dine.html">
+                        <img
+                            class="card__image"
+                            src="images/hightide.png"
+                            alt="Dine"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Dine</h3>
+                        </div>
+                    </div>
+
+                    <div class="card" data-link="events.html">
+                        <img
+                            class="card__image"
+                            src="images/celebration.png"
+                            alt="Events"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Events</h3>
+                        </div>
+                    </div>
+
+                    <div class="card" data-link="experiences.html">
+                        <img
+                            class="card__image"
+                            src="images/snorkeling.png"
+                            alt="Experiences"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Experiences</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
         <footer>
             <div class="footer-container">
                 <div class="footer-left">
@@ -163,12 +179,9 @@
                         <input
                             type="email"
                             placeholder="Enter your email"
-                            required />
-                        <button
-                            type="submit"
-                            class="btn-gold-outline">
-                            Subscribe
-                        </button>
+                            required
+                        />
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
 
