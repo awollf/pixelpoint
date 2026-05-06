@@ -5,173 +5,199 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Experiences</title>
         <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
     </head>
-    <!doctype html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8" />
-            <meta
-                name="viewport"
-                content="width=device-width, initial-scale=1.0"
-            />
-            <title>Experiences</title>
-            <link rel="stylesheet" href="styles.css" />
-            <script src="script.js" defer></script>
-        </head>
 
-        <body class="experiences-page">
-            <header class="header">
-                <nav class="navbar">
-                    <h1 class="header__title">
-                        <a href="home.html" class="header__brand">
-                            <img
-                                src="logos/WPH Logo 3.png"
-                                alt="West Point Hotel"
-                                class="header__logo"
-                            />
-                        </a>
-                    </h1>
+    <body class="experiences-page">
+        <header class="header">
+            <nav class="navbar">
+                <h1 class="header__title">
+                    <a href="home.html" class="header__brand">
+                        <img
+                            src="logos/WPH Logo 3.png"
+                            alt="West Point Hotel"
+                            class="header__logo"
+                        />
+                    </a>
+                </h1>
 
-                    <ul class="nav-links">
-                        <li class="nav-links__item">
-                            <a class="nav-links__link" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-links__item">
-                            <a class="nav-links__link" href="stay.html">Stay</a>
-                        </li>
-                        <li class="nav-links__item">
-                            <a class="nav-links__link" href="experiences.html"
-                                >Experiences</a
-                            >
-                        </li>
-                        <li class="nav-links__item">
-                            <a class="nav-links__link" href="dine.html">Dine</a>
-                        </li>
-                        <li class="nav-links__item">
-                            <a class="nav-links__link" href="events.html"
-                                >Events</a
-                            >
-                        </li>
-                        <li class="nav-links__item">
-                            <a class="nav-links__link" href="offers.html"
-                                >Offers</a
-                            >
-                        </li>
-                        <li class="nav-links__item">
-                            <a class="nav-links__link" href="about.html"
-                                >About</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+                <ul class="nav-links">
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="stay.html">Stay</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="experiences.html"
+                            >Experiences</a
+                        >
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="dine.html">Dine</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="offers.html">Offers</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-            <main>
-                <button class="back_button" data-link="home.html">
-                    <span class="arrow"><</span> Back
-                </button>
-                <section class="hero">
-                    <img
-                        src="images/experiences-pg-hero.jpg"
-                        class="hero__image"
-                    />
-                    <div class="hero__content">
-                        <h1 class="hero__title">Experiences</h1>
-                    </div>
-                </section>
+        <main>
+            <button class="back_button" data-action="back">
+                <span class="arrow"><</span> Back
+            </button>
 
-                <section class="page-heading">
-                    <h2>Experiences</h2>
+            <section class="hero hero--experience">
+                <img
+                    class="hero__image"
+                    src="images/experiencesImage.jpg"
+                    alt="Experiences"
+                />
+            </section>
+
+            <section class="intro">
+                <div class="intro__content">
+                    <h1 style="font-family: Optima">Experiences</h1>
                     <p>
                         From bespoke adventures to serene escapes, every
                         experience is uniquely yours.
                     </p>
-                </section>
+                </div>
+            </section>
 
-                <section class="experiences__grid">
-                    <div class="card" data-link="#">
-                        <img class="card__image" src="images/zip-lining.png" />
-                        <div class="card__overlay">
-                            <div class="card__text">
-                                <p class="card__label">Explore</p>
-                                <h3 class="card__title">Adventure Tours</h3>
-                            </div>
-                            <p class="card__description">View Details ></p>
+            <section class="experiences__grid">
+                <div class="card" data-link="#">
+                    <img class="card__image" src="images/snorkeling.png" />
+                    <div class="card__overlay">
+                        <div class="card__text">
+                            <p class="card__label">Explore</p>
+                            <h3 class="card__title">Adventure Tours</h3>
                         </div>
-                    </div>
-
-                    <div class="card" data-link="#">
-                        <img class="card__image" src="images/helicopter.png" />
-                        <div class="card__overlay">
-                            <div class="card__text">
-                                <p class="card__label">Explore</p>
-                                <h3 class="card__title">
-                                    Helicopter Experiences
-                                </h3>
-                            </div>
-                            <p class="card__description">View Details ></p>
-                        </div>
-                    </div>
-
-                    <div class="card" data-link="#">
-                        <img class="card__image" src="images/boat.png" />
-                        <div class="card__overlay">
-                            <div class="card__text">
-                                <p class="card__label">Explore</p>
-                                <h3 class="card__title">Our Yachts</h3>
-                            </div>
-                            <p class="card__description">View Details ></p>
-                        </div>
-                    </div>
-
-                    <div class="card" data-link="#">
-                        <img class="card__image" src="images/mini-mall.jpg" />
-                        <div class="card__overlay">
-                            <div class="card__text">
-                                <p class="card__label">Explore</p>
-                                <h3 class="card__title">Luxury Mini Mall</h3>
-                            </div>
-                            <p class="card__description">View Details ></p>
-                        </div>
-                    </div>
-                </section>
-            </main>
-
-            <footer>
-                <div class="footer-container">
-                    <div class="footer-left">
-                        <h2>Newsletter</h2>
-                        <p>
-                            Subscribe to our newsletter for exclusive offers and
-                            updates!
-                        </p>
-                        <form class="newsletter-form">
-                            <input
-                                type="email"
-                                placeholder="Enter your email"
-                                required
-                            />
-                            <button type="submit" class="btn-gold-outline">
-                                Subscribe
-                            </button>
-                        </form>
-                    </div>
-
-                    <div class="footer-right">
-                        <h2>West Point Hotel</h2>
-                        <p>Location: 123 Main Street, Caribbean</p>
-                        <p>Phone: (123) 456-7890</p>
-                        <p>Email: info@westpointhotel.com</p>
+                        <p class="card__description">View Details ></p>
                     </div>
                 </div>
-                <div class="footer-bottom">
-                    <div class="footer-center">
-                        <p>
-                            &copy; 2026 West Point Hotel. All rights reserved.
-                        </p>
+
+                <div class="card" data-link="#">
+                    <img class="card__image" src="images/helicopter2.png" />
+                    <div class="card__overlay">
+                        <div class="card__text">
+                            <p class="card__label">Explore</p>
+                            <h3 class="card__title">Helicopter Experiences</h3>
+                        </div>
+                        <p class="card__description">View Details ></p>
                     </div>
                 </div>
-            </footer>
-        </body>
-    </html>
+
+                <div class="card" data-link="#">
+                    <img class="card__image" src="images/boat.png" />
+                    <div class="card__overlay">
+                        <div class="card__text">
+                            <p class="card__label">Explore</p>
+                            <h3 class="card__title">Our Yachts</h3>
+                        </div>
+                        <p class="card__description">View Details ></p>
+                    </div>
+                </div>
+
+                <div class="card" data-link="#">
+                    <img class="card__image" src="images/minimall.png" />
+                    <div class="card__overlay">
+                        <div class="card__text">
+                            <p class="card__label">Explore</p>
+                            <h3 class="card__title">Luxury Mini Mall</h3>
+                        </div>
+                        <p class="card__description">View Details ></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="discovermore">
+                <h2 class="section__title">Discover Our Experiences</h2>
+                <div class="discovermore__grid">
+                    <div class="card" data-link="stay.html">
+                        <img
+                            class="card__image"
+                            src="images/suiteImage.png"
+                            alt="Stay"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Stay</h3>
+                        </div>
+                    </div>
+
+                    <div class="card" data-link="dine.html">
+                        <img
+                            class="card__image"
+                            src="images/hightide.png"
+                            alt="Dine"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Dine</h3>
+                        </div>
+                    </div>
+
+                    <div class="card" data-link="events.html">
+                        <img
+                            class="card__image"
+                            src="images/celebration.png"
+                            alt="Events"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Events</h3>
+                        </div>
+                    </div>
+
+                    <div class="card" data-link="experiences.html">
+                        <img
+                            class="card__image"
+                            src="images/snorkeling.png"
+                            alt="Experiences"
+                        />
+                        <div class="card__overlay">
+                            <h3 class="card__title">Experiences</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h2>Newsletter</h2>
+                    <p>
+                        Subscribe to our newsletter for exclusive offers and
+                        updates!
+                    </p>
+                    <form class="newsletter-form">
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-right">
+                    <h2>West Point Hotel</h2>
+                    <p>Location: 123 Main Street, Caribbean</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@westpointhotel.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-center">
+                    <p>&copy; 2026 West Point Hotel. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
