@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Confirmation</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+
+    <body class="confirmation-page">
+        <header class="header">
+            <nav class="navbar">
+                <h1 class="header__title">
+                    <a href="home.html" class="header__brand">
+                        <img
+                            src="logos/WPH Logo 3.png"
+                            alt="West Point Hotel"
+                            class="header__logo"
+                        />
+                    </a>
+                </h1>
+
+                <ul class="nav-links">
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="stay.html">Stay</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="experiences.html"
+                            >Experiences</a
+                        >
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="dine.html">Dine</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="offers.html">Offers</a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <button class="back_button" data-action="back">
+                <span class="arrow"><</span> Back
+            </button>
+
+            <section class="confirmation-container">
+                <div class="confirmation-message">
+                    <p>
+                        Thank you for booking your stay with West Point Hotel!
+                    </p>
+
+                    <p>
+                        You will receive a confirmation email with the details
+                        about your booking and invoice.
+                    </p>
+                </div>
+
+                <div class="confirmation-divider"></div>
+
+                <div class="confirmation-summary">
+                    <img src="images/room 1.png" alt="The King Room" />
+
+                    <div class="confirmation-summary__content">
+                        <p>Type: The King Room</p>
+
+                        <p>Guests: 2 people</p>
+
+                        <p>Check-In: Nov 15th, 2026</p>
+
+                        <p>Check-Out: Nov 17th, 2026</p>
+                    </div>
+                </div>
+
+                <!-- OPTIONS -->
+
+                <div class="confirmation-options">
+                    <h3>Additional Options</h3>
+
+                    <p>• Limo Service</p>
+                </div>
+
+                <!-- LINE -->
+
+                <div
+                    class="confirmation-divider confirmation-divider--bottom"
+                ></div>
+
+                <div class="flow-buttons">
+                    <a href="home.html" class="flow-btn flow-btn--dark">
+                        Home Page
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h2>Newsletter</h2>
+                    <p>
+                        Subscribe to our newsletter for exclusive offers and
+                        updates!
+                    </p>
+                    <form class="newsletter-form">
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-right">
+                    <h2>West Point Hotel</h2>
+                    <p>Location: 123 Main Street, Caribbean</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@westpointhotel.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-center">
+                    <p>&copy; 2026 West Point Hotel. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
