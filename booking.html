@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Booking</title>
+
+        <link rel="stylesheet" href="styles.css" />
+
+        <script src="script.js" defer></script>
+    </head>
+
+    <body class="booking-page">
+        <header class="header">
+            <nav class="navbar">
+                <h1 class="header__title">
+                    <a href="home.html" class="header__brand">
+                        <img
+                            src="logos/WPH Logo 3.png"
+                            alt="West Point Hotel"
+                            class="header__logo"
+                        />
+                    </a>
+                </h1>
+
+                <ul class="nav-links">
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="home.html">Home</a>
+                    </li>
+
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="stay.html">Stay</a>
+                    </li>
+
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="experiences.html">
+                            Experiences
+                        </a>
+                    </li>
+
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="dine.html">Dine</a>
+                    </li>
+
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="events.html">
+                            Events
+                        </a>
+                    </li>
+
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="offers.html">
+                            Offers
+                        </a>
+                    </li>
+
+                    <li class="nav-links__item">
+                        <a class="nav-links__link" href="about.html"> About </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <button class="back_button" data-action="back">
+                <span class="arrow"><</span>
+                Back
+            </button>
+
+            <section class="booking-container">
+                <h1 class="booking-title">Reservation</h1>
+
+                <!-- ROOM PREVIEW -->
+
+                <section class="booking-room">
+                    <div class="booking-room__wrapper">
+                        <div
+                            class="booking-placeholder"
+                            id="bookingPlaceholder"
+                        >
+                            <p>Select your luxury stay</p>
+                        </div>
+
+                        <img
+                            src=""
+                            alt=""
+                            class="booking-room__image"
+                            id="roomImage"
+                        />
+
+                        <div class="booking-room__overlay" id="roomOverlay">
+                            <div class="booking-room__content">
+                                <p class="booking-room__subtitle">
+                                    WEST POINT HOTEL
+                                </p>
+
+                                <h2 id="roomTitle">Luxury Suite</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SELECT SECTION -->
+
+                <section class="booking-selection">
+                    <div class="booking-selection__grid">
+                        <!-- STAY TYPE -->
+
+                        <div class="booking-selection__group">
+                            <label>Stay Type</label>
+
+                            <div class="select-wrapper">
+                                <select id="stayType">
+                                    <option value="" selected disabled>
+                                        Select Stay Type
+                                    </option>
+
+                                    <option value="room">Luxury Room</option>
+
+                                    <option value="bungalow">
+                                        Private Bungalow
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- ROOM -->
+
+                        <div
+                            class="booking-selection__group"
+                            id="roomGroup"
+                            style="display: none"
+                        >
+                            <label>Room Type</label>
+
+                            <div class="select-wrapper">
+                                <select id="roomSelect">
+                                    <option value="" selected disabled>
+                                        Choose Your Room
+                                    </option>
+
+                                    <option value="room1">
+                                        The King Room · $500
+                                    </option>
+
+                                    <option value="room2">
+                                        The Queen Room · $450
+                                    </option>
+
+                                    <option value="room3">
+                                        Two King Room · $650
+                                    </option>
+
+                                    <option value="room4">
+                                        Two Queen Room · $600
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- BUNGALOW -->
+
+                        <div
+                            class="booking-selection__group"
+                            id="bungalowGroup"
+                            style="display: none"
+                        >
+                            <label>Bungalow Type</label>
+
+                            <div class="select-wrapper">
+                                <select id="bungalowSelect">
+                                    <option value="" selected disabled>
+                                        Choose Your Bungalow
+                                    </option>
+
+                                    <option value="bungalow1">
+                                        Private Bungalow · $999
+                                    </option>
+
+                                    <option value="bungalow2">
+                                        Pool Bungalow · $1299
+                                    </option>
+
+                                    <option value="bungalow3">
+                                        4 Bedroom Pool Villa · $1799
+                                    </option>
+
+                                    <option value="bungalow4">
+                                        4 Bedroom Villa · $1499
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BOOKING GRID -->
+
+                <section class="booking-grid">
+                    <!-- LEFT -->
+
+                    <div class="booking-card">
+                        <h2>Select Dates & Guests</h2>
+
+                        <!-- CALENDAR -->
+
+                        <div class="booking-calendar">
+                            <div class="calendar-header">
+                                <button type="button" class="calendar-nav">
+                                    ‹
+                                </button>
+
+                                <span>November 2026</span>
+
+                                <button type="button" class="calendar-nav">
+                                    ›
+                                </button>
+                            </div>
+
+                            <div class="calendar-weekdays">
+                                <span>Su</span>
+                                <span>Mo</span>
+                                <span>Tu</span>
+                                <span>We</span>
+                                <span>Th</span>
+                                <span>Fr</span>
+                                <span>Sa</span>
+                            </div>
+
+                            <div class="calendar-days">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                                <button class="calendar-date">1</button>
+                                <button class="calendar-date">2</button>
+                                <button class="calendar-date">3</button>
+                                <button class="calendar-date">4</button>
+                                <button class="calendar-date">5</button>
+                                <button class="calendar-date">6</button>
+                                <button class="calendar-date">7</button>
+
+                                <button class="calendar-date">8</button>
+                                <button class="calendar-date">9</button>
+                                <button class="calendar-date">10</button>
+                                <button class="calendar-date">11</button>
+                                <button class="calendar-date">12</button>
+                                <button class="calendar-date">13</button>
+                                <button class="calendar-date">14</button>
+
+                                <button class="calendar-date">15</button>
+                                <button class="calendar-date">16</button>
+                                <button class="calendar-date">17</button>
+                                <button class="calendar-date">18</button>
+                                <button class="calendar-date">19</button>
+                                <button class="calendar-date">20</button>
+                                <button class="calendar-date">21</button>
+
+                                <button class="calendar-date">22</button>
+                                <button class="calendar-date">23</button>
+                                <button class="calendar-date">24</button>
+                                <button class="calendar-date">25</button>
+                                <button class="calendar-date">26</button>
+                                <button class="calendar-date">27</button>
+                                <button class="calendar-date">28</button>
+
+                                <button class="calendar-date">29</button>
+                                <button class="calendar-date">30</button>
+                            </div>
+                        </div>
+
+                        <!-- FORM -->
+
+                        <form class="booking-form">
+                            <div class="booking-date-grid">
+                                <div class="booking-input">
+                                    <label>Check In</label>
+
+                                    <input type="date" id="checkInDate" />
+                                </div>
+
+                                <div class="booking-input">
+                                    <label>Check Out</label>
+
+                                    <input type="date" id="checkOutDate" />
+                                </div>
+                            </div>
+
+                            <div class="select-wrapper">
+                                <select>
+                                    <option>Guests · 01</option>
+                                    <option>Guests · 02</option>
+                                    <option>Guests · 03</option>
+                                    <option>Guests · 04</option>
+                                    <option>Guests · 05</option>
+                                    <option>Guests · 06</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- RIGHT -->
+
+                    <div class="booking-card">
+                        <h2>Packages & Activities</h2>
+
+                        <form class="booking-form">
+                            <div class="booking-input">
+                                <label>Packages</label>
+
+                                <div class="select-wrapper">
+                                    <select>
+                                        <option>Choose Package</option>
+
+                                        <option>Adventure Collection</option>
+
+                                        <option>Independent Retreat</option>
+
+                                        <option>Culinary Journey</option>
+
+                                        <option>Eternal Moments</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- ACTIVITIES -->
+
+                            <div class="booking-activities">
+                                <label>Activities</label>
+
+                                <div class="booking-activities__list">
+                                    <button type="button" class="activity-tag">
+                                        Snorkeling
+                                    </button>
+
+                                    <button type="button" class="activity-tag">
+                                        Zipline
+                                    </button>
+
+                                    <button type="button" class="activity-tag">
+                                        Yacht Tour
+                                    </button>
+
+                                    <button type="button" class="activity-tag">
+                                        Helicopter Tour
+                                    </button>
+
+                                    <button type="button" class="activity-tag">
+                                        Private Jet
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="booking-input">
+                                <label>Transportation</label>
+
+                                <div class="select-wrapper">
+                                    <select>
+                                        <option>Select Transportation</option>
+
+                                        <option>Private Car Service</option>
+
+                                        <option>Hotel Shuttle</option>
+
+                                        <option>Luxury Limousine</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="booking-input">
+                                <label>Additional Notes</label>
+
+                                <textarea
+                                    placeholder="Additional requests..."
+                                ></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- BUTTONS -->
+
+                <div class="flow-buttons">
+                    <a href="home.html">
+                        <button class="flow-btn flow-btn--outline">
+                            Cancel
+                        </button>
+                    </a>
+                    <a href="policies.html">
+                        <button class="flow-btn flow-btn--primary">
+                            Continue
+                        </button>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h2>Newsletter</h2>
+
+                    <p>
+                        Subscribe to our newsletter for exclusive offers and
+                        updates!
+                    </p>
+
+                    <form class="newsletter-form">
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                        />
+
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-right">
+                    <h2>West Point Hotel</h2>
+
+                    <p>Location: 123 Main Street, Caribbean</p>
+
+                    <p>Phone: (123) 456-7890</p>
+
+                    <p>Email: info@westpointhotel.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-center">
+                    <p>&copy; 2026 West Point Hotel. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
